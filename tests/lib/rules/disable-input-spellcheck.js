@@ -7,7 +7,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/disable-input-spellcheck"),
+const rule = require("../../../lib/rules/disable-input-spellcheck"),
     RuleTester = require("eslint").RuleTester;
 const {testMapper} = require("../../utils/testMapper");
 
@@ -15,7 +15,7 @@ const {testMapper} = require("../../utils/testMapper");
 // Tests
 //------------------------------------------------------------------------------
 
-var ruleTester = new RuleTester();
+const ruleTester = new RuleTester();
 ruleTester.run("disable-input-spellcheck", rule, {
     valid: [
         {code: `<input spellcheck="false" />`},

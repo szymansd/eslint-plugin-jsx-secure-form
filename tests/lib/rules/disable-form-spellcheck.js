@@ -15,7 +15,7 @@ const testMapper = require("../../utils/testMapper").testMapper;
 // Tests
 //------------------------------------------------------------------------------
 
-var ruleTester = new RuleTester();
+const ruleTester = new RuleTester();
 ruleTester.run("disable-form-spellcheck", rule, {
     valid: [
         {code: `<form spellcheck="false" />`, parserOptions: {
