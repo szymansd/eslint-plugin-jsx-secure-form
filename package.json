@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-jsx-secure-form",
+  "version": "0.0.1",
+  "description": "Plugin that checks if you fields have spellcheck attribute set to false",
+  "main": "lib/index.js",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "jsx",
+    "html",
+    "react",
+    "form"
+  ],
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szymansd/eslint-plugin-jsx-secure-form.git"
+  },
+  "author": "Dominik Szymanski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szymansd/eslint-plugin-jsx-secure-form/issues"
+  },
+  "homepage": "https://github.com/szymansd/eslint-plugin-jsx-secure-form#readme",
+  "dependencies": {
+    "jsx-ast-utils": "^3.3.3",
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "mocha": "^10.0.0"
+  }
+}
