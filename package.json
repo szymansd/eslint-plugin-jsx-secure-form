@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jsx-secure-form",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Plugin that checks if you fields have spellcheck attribute set to false",
   "main": "lib/index.js",
   "keywords": [
@@ -31,6 +31,10 @@
   },
   "devDependencies": {
     "eslint": "^8.23.1",
+    "eslint-plugin-eslint-plugin": "^5.0.6",
     "mocha": "^10.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
   }
 }
