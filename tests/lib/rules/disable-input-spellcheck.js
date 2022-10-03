@@ -19,6 +19,10 @@ const ruleTester = new RuleTester();
 ruleTester.run("disable-input-spellcheck", rule, {
     valid: [
         {code: `<input spellcheck="false" />`},
+        {code: `<input type="file" />`},
+        {code: `<input type="image" />`},
+        {code: `<input type="reset" />`},
+        {code: `<input type="submit" />`},
     ].map(testMapper),
 
     invalid: [
@@ -26,7 +30,7 @@ ruleTester.run("disable-input-spellcheck", rule, {
             code: `<input type="email" />`,
             errors: [
                 {
-                    message: 'You should set spellcheck attribute to false due to security reasons',
+                    message: 'You should set "spellcheck" attribute to false due to security reasons',
                     type: "JSXOpeningElement"
                 }
             ]
@@ -35,7 +39,7 @@ ruleTester.run("disable-input-spellcheck", rule, {
             code: `<input type="password" spellcheck="true" />`,
             errors: [
                 {
-                    message: 'You should set spellcheck attribute to false due to security reasons',
+                    message: 'You should set "spellcheck" attribute to false due to security reasons',
                     type: "JSXOpeningElement"
                 }
             ]

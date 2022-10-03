@@ -39,3 +39,6 @@ For example:
   }
 }
 ```
+
+### Exclusions
+This rules is not working for given input types: `"file", "image", "reset", and "submit"`.

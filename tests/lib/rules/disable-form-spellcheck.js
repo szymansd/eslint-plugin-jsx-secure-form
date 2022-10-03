@@ -32,7 +32,7 @@ ruleTester.run("disable-form-spellcheck", rule, {
             code: `<form name="test" />`,
             errors: [
                 {
-                    message: 'You should set spellcheck attribute to false due to security reasons',
+                    message: 'You should set "spellcheck" attribute to false due to security reasons',
                     type: "JSXOpeningElement"
                 }
             ]
@@ -41,7 +41,7 @@ ruleTester.run("disable-form-spellcheck", rule, {
             code: `<form spellcheck="true" />`,
             errors: [
                 {
-                    message: 'You should set spellcheck attribute to false due to security reasons',
+                    message: 'You should set "spellcheck" attribute to false due to security reasons',
                     type: "JSXOpeningElement"
                 }
             ]
